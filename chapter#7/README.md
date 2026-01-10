@@ -60,11 +60,29 @@ Use Python (Google Colab compatible) to complete all tasks:
   - Session duration
   - Bounce rate
 
+### 5. Network Analysis (NetworkX Extension)
+- Builds user interaction networks from synthetic data
+- Computes centrality metrics:
+  - Degree Centrality (direct connections)
+  - Betweenness Centrality (bridging capability)
+  - PageRank (importance based on connections)
+  - In/Out-Degree Centrality
+- Identifies influential users through network analysis
+- Community detection using modularity optimization
+- Analyzes community characteristics and cohesion
+
+### 6. Distributed Processing (PySpark Extension)
+- Distributed data processing for large-scale analytics
+- Spark SQL operations for efficient aggregations
+- Scalable to big data workloads
+- Parallel computation of metrics
+
 ## Technologies Used
 
 - **Pandas**: Data manipulation and aggregation
 - **NumPy**: Numerical computing and random data generation
 - **Scikit-learn**: Machine learning preprocessing (StandardScaler)
+- **NetworkX**: Network analysis and graph algorithms
 - **PySpark** (optional): Distributed data processing
 - **Python datetime**: Timestamp generation and manipulation
 
@@ -72,9 +90,19 @@ Use Python (Google Colab compatible) to complete all tasks:
 
 1. **user_activity_analytics.py** - Standard implementation using Pandas, NumPy, and Scikit-learn
 2. **user_activity_analytics_pyspark.py** - Distributed processing version using PySpark
-3. **user_activity_analytics_colab.ipynb** - Google Colab notebook (optional)
+3. **user_network_analysis.py** - Network analysis using NetworkX
+4. **requirements.txt** - Python dependencies
+5. **sample_output.txt** - Example output from the analytics script
 
 ## Installation
+
+### Quick Installation
+
+Using requirements.txt:
+
+```bash
+pip install -r requirements.txt
+```
 
 ### For Standard Version (Pandas/NumPy/Scikit-learn)
 
@@ -111,6 +139,16 @@ python user_activity_analytics_pyspark.py
 ```
 
 Note: PySpark version provides distributed processing capabilities, ideal for larger datasets.
+
+### Network Analysis Version (NetworkX)
+
+Run the network analysis script:
+
+```bash
+python user_network_analysis.py
+```
+
+Note: This version analyzes user interaction networks using graph algorithms.
 
 ### Programmatic Usage
 
@@ -209,14 +247,30 @@ top_users = identify_top_users(user_stats, top_n=10)
 - Performance benchmarking
 - User segmentation
 
+### 5. Network Analysis
+- Graph theory applications
+- Centrality metrics (degree, betweenness, PageRank)
+- Community detection algorithms
+- Influence propagation modeling
+- Network cohesion measurement
+
+### 6. Distributed Computing (PySpark)
+- Spark DataFrame operations
+- Distributed aggregations
+- Parallel processing
+- Scalable data analytics
+
 ## Real-World Applications
 
 This implementation can be adapted for:
-- E-commerce platforms analyzing user behavior
-- SaaS applications tracking user engagement
-- Content platforms measuring user activity
-- Marketing analytics identifying high-value customers
-- Product analytics understanding user patterns
+- **E-commerce platforms**: Analyzing user behavior and purchase patterns
+- **Social networks**: Identifying influential users and communities
+- **SaaS applications**: Tracking user engagement and feature adoption
+- **Content platforms**: Measuring user activity and content interactions
+- **Marketing analytics**: Identifying high-value customers and influencers
+- **Product analytics**: Understanding user patterns and network effects
+- **Recommendation systems**: Using network structure for better recommendations
+- **Fraud detection**: Identifying suspicious network patterns
 
 ## Customization
 
@@ -265,14 +319,16 @@ Note: Google Colab provides a pre-configured environment ideal for Big Data Anal
 ## Future Enhancements
 
 Potential improvements:
-- Add time-series analysis for trend detection
-- Implement cohort analysis
-- Add visualization with matplotlib/seaborn
-- Include PySpark for distributed processing
-- Add NetworkX for user relationship analysis
-- Implement machine learning models for prediction
-- Add A/B testing framework
-- Include anomaly detection
+- **Visualization**: Add matplotlib/seaborn/plotly for data visualization
+- **Time-series analysis**: Trend detection and forecasting
+- **Cohort analysis**: Track user behavior over time
+- **Machine learning models**: Predictive modeling (churn, LTV)
+- **Real-time processing**: Stream processing with Spark Streaming
+- **Graph visualization**: Interactive network visualizations
+- **A/B testing framework**: Statistical testing for experiments
+- **Anomaly detection**: Identify unusual patterns and outliers
+- **Deep learning**: Neural networks for advanced predictions
+- **Dashboard integration**: Connect to BI tools (Tableau, Power BI)
 
 ## License
 
