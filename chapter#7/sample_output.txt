@@ -1,0 +1,170 @@
+
+╔════════════════════════════════════════════════════════════════════╗
+║          BIG DATA ANALYTICS - USER ACTIVITY SESSION ANALYSIS       ║
+╚════════════════════════════════════════════════════════════════════╝
+======================================================================
+  SYNTHETIC DATASET GENERATION - USER ACTIVITY SESSIONS
+======================================================================
+
+📊 Generating dataset with:
+   - 100 unique users
+   - 1000 total sessions
+
+✅ Dataset generated successfully!
+
+📋 Dataset preview (first 5 rows):
+----------------------------------------------------------------------
+   user_id     session_id  ...  bounce                  timestamp
+0       52  SESSION_00001  ...       0 2025-12-25 09:27:35.031249
+1       93  SESSION_00002  ...       0 2025-12-24 09:12:35.031249
+2       15  SESSION_00003  ...       0 2025-12-15 06:58:35.031249
+3       72  SESSION_00004  ...       0 2025-12-13 11:37:35.031249
+4       61  SESSION_00005  ...       1 2026-01-08 08:58:35.031249
+
+[5 rows x 10 columns]
+----------------------------------------------------------------------
+
+======================================================================
+  DATA FILTERING AND AGGREGATION
+======================================================================
+
+🔍 Filtering bounced sessions:
+   - Total sessions: 1000
+   - Bounced sessions: 309
+   - Engaged sessions: 691
+
+📊 Computing session-level statistics per user...
+
+✅ Aggregation completed!
+   - Total unique users: 100
+
+📋 Aggregated statistics preview (first 5 users):
+----------------------------------------------------------------------
+   user_id  total_sessions  ...  conversion_rate  avg_revenue_per_session
+0        1              16  ...        25.000000                 6.201984
+1        2              13  ...        15.384615                11.753351
+2        3              12  ...         0.000000                 0.000000
+3        4              11  ...        27.272727                 9.872948
+4        5              11  ...        45.454545                12.750652
+
+[5 rows x 14 columns]
+----------------------------------------------------------------------
+
+======================================================================
+  PERFORMANCE METRIC CALCULATION
+======================================================================
+
+🎯 Computing comprehensive performance score...
+   Performance metric combines:
+   - Engagement score (30%)
+   - Total revenue (30%)
+   - Conversion rate (20%)
+   - Total sessions (20%)
+
+✅ Performance scores calculated successfully!
+
+======================================================================
+  TOP 10 USERS BY PERFORMANCE SCORE
+======================================================================
+
+🏆 Top Performing Users:
+----------------------------------------------------------------------
+ rank  user_id  performance_score  total_sessions  engagement_score  total_revenue  conversion_rate
+    1       30         100.000000              10         18.140108     413.358918        50.000000
+    2       39          99.894161              12         24.669880     308.630190        25.000000
+    3       24          97.470434              14         23.006523     323.454091        21.428571
+    4        7          87.648006               8         21.643732     367.821814        25.000000
+    5        5          87.504285              11         23.253723     140.257171        45.454545
+    6       74          87.086590              10         24.279322     211.255692        30.000000
+    7       80          85.153092               8         20.221609     463.071631        12.500000
+    8       96          82.393990              13         20.567576     272.128973        23.076923
+    9       85          79.551196               8         26.027193     151.286103        25.000000
+   10       58          78.136483              15         19.390708     251.421692        20.000000
+----------------------------------------------------------------------
+
+📊 Detailed Statistics for Top Users:
+----------------------------------------------------------------------
+
+🥇 Rank #1: User 30
+   Performance Score: 100.00/100
+   Total Sessions: 10
+   Total Revenue: $413.36
+   Engagement Score: 18.14
+   Conversion Rate: 50.00%
+   Avg Session Duration: 25.15 minutes
+   Bounce Rate: 40.00%
+
+🥇 Rank #2: User 39
+   Performance Score: 99.89/100
+   Total Sessions: 12
+   Total Revenue: $308.63
+   Engagement Score: 24.67
+   Conversion Rate: 25.00%
+   Avg Session Duration: 35.52 minutes
+   Bounce Rate: 8.33%
+
+🥇 Rank #3: User 24
+   Performance Score: 97.47/100
+   Total Sessions: 14
+   Total Revenue: $323.45
+   Engagement Score: 23.01
+   Conversion Rate: 21.43%
+   Avg Session Duration: 33.82 minutes
+   Bounce Rate: 14.29%
+
+🥇 Rank #4: User 7
+   Performance Score: 87.65/100
+   Total Sessions: 8
+   Total Revenue: $367.82
+   Engagement Score: 21.64
+   Conversion Rate: 25.00%
+   Avg Session Duration: 28.09 minutes
+   Bounce Rate: 12.50%
+
+🥇 Rank #5: User 5
+   Performance Score: 87.50/100
+   Total Sessions: 11
+   Total Revenue: $140.26
+   Engagement Score: 23.25
+   Conversion Rate: 45.45%
+   Avg Session Duration: 41.04 minutes
+   Bounce Rate: 27.27%
+
+----------------------------------------------------------------------
+
+======================================================================
+  OVERALL SUMMARY STATISTICS
+======================================================================
+
+📈 Dataset Overview:
+   Total Sessions: 1000
+   Unique Users: 100
+   Date Range: 2025-12-11 to 2026-01-10
+
+💰 Revenue Metrics:
+   Total Revenue: $7794.08
+   Average Revenue per Session: $7.79
+   Total Transactions: 149
+
+🎯 Engagement Metrics:
+   Average Session Duration: 30.17 minutes
+   Average Pages Viewed: 10.05
+   Average Clicks: 14.91
+   Overall Bounce Rate: 30.90%
+
+📱 Device Distribution:
+   Desktop: 501 sessions (50.1%)
+   Mobile: 403 sessions (40.3%)
+   Tablet: 96 sessions (9.6%)
+
+👥 User Activity Distribution:
+   Min Sessions per User: 3
+   Max Sessions per User: 20
+   Avg Sessions per User: 10.00
+
+======================================================================
+
+╔════════════════════════════════════════════════════════════════════╗
+║                    ANALYSIS COMPLETED SUCCESSFULLY!                 ║
+╚════════════════════════════════════════════════════════════════════╝
+
